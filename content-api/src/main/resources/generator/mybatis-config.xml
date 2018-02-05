@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="MySqlTables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.89.80:3306/apps"
+                        userId="me2me"
+                        password="Sp@Metro#79">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.me2me.content.model" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis"  targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.me2me.content.mapper"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+
+        <!--<table tableName="user" domainObjectName="User"/>-->
+        <!--<table tableName="at_review" domainObjectName="AtReview"/>-->
+        <!--<table tableName="content_image" domainObjectName="ContentImage"/>-->
+        <!-- <table tableName="content_user_likes" domainObjectName="ContentUserLikes"/>-->
+        <!-- <table tableName="content_tags" domainObjectName="ContentTags"/> -->
+        <!-- <table tableName="content_tag_likes" domainObjectName="ContentTagLikes"/> -->
+        <!--<table tableName="content_user_likes_count" domainObjectName="ContentUserLikesCount"/>-->
+        <!--<table tableName="content" domainObjectName="Content"/> -->
+        <!--<table tableName="content_user_likes_count" domainObjectName="ContentUserLikesCount"/>-->
+        <!--<table tableName="content" domainObjectName="Content"/>-->
+        <!--<table tableName="high_quality_content" domainObjectName="HighQualityContent"/>-->
+        <!--<table tableName="mobile_article" domainObjectName="MobileArticle"/>-->
+        <!--<table tableName="content_tags_details" domainObjectName="ContentTagsDetails"/>-->
+        <!--<table tableName="content_review" domainObjectName="ContentReview"/>-->
+        <!-- <table tableName="content" domainObjectName="Content"/> -->
+        <!--<table tableName="article_likes_details" domainObjectName="ArticleLikesDetails"/>-->
+        <!--<table tableName="article_review" domainObjectName="ArticleReview"/>-->
+        <!--<table tableName="article_tags_details" domainObjectName="ArticleTagsDetails"/>-->
+        <!-- <table tableName="emotion_pack" domainObjectName="EmotionPack"/> -->
+        <!-- <table tableName="emotion_pack_detail" domainObjectName="EmotionPackDetail"/> -->
+        <!--<table tableName="billboard_details" domainObjectName="BillBoardDetails"/>-->
+        <!--<table tableName="billboard_relation" domainObjectName="BillBoardRelation"/>-->
+        <!--<table tableName="billboard_list" domainObjectName="BillBoardList"/>-->
+        <!-- <table tableName="tease_info" domainObjectName="TeaseInfo"/> -->
+        <!-- <table tableName="tease_info" domainObjectName="TeaseInfo"/> -->
+        <!-- <table tableName="vote_info" domainObjectName="VoteInfo"/> -->
+        <!-- <table tableName="vote_option" domainObjectName="VoteOption"/> -->
+        <!-- <table tableName="vote_record" domainObjectName="VoteRecord"/> -->
+        <!-- <table tableName="content_share_history" domainObjectName="ContentShareHistory"/> -->
+        <!-- <table tableName="user_visit_log" domainObjectName="UserVisitLog"/> -->
+        <!-- <table tableName="user_tag_like" domainObjectName="UserTagLike"/> -->
+        <!-- <table tableName="ad_banner" domainObjectName="AdBanner"/> -->
+        <!-- <table tableName="ad_info" domainObjectName="AdInfo"/> -->
+        <!--  <table tableName="ad_record" domainObjectName="AdRecord"/> -->
+    </context>
+</generatorConfiguration>
