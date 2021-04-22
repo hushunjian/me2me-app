@@ -236,7 +236,7 @@
     </developers>
     <properties>
         <kisso.version>3.6.10</kisso.version>
-        <bcprov-jdk14.version>1.50</bcprov-jdk14.version>
+        <bcprov-jdk14.version>1.61</bcprov-jdk14.version>
     	<jetty.version>6.1.22</jetty.version>
         <spring.version>4.2.6.RELEASE</spring.version>
         <fastjson.version>1.2.7</fastjson.version>
