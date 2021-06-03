@@ -249,7 +249,7 @@
         <lombok.version>1.16.6</lombok.version>
         <shiro.version>1.2.4</shiro.version>
         <slf4j.version>1.7.12</slf4j.version>
-        <httpclient.version>4.5</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <guava.version>18.0</guava.version>
         <servlet.version>3.1.0</servlet.version>
         <dubbo.version>2.5.3</dubbo.version>
